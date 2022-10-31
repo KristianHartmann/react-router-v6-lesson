@@ -15,13 +15,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Header/>
 
                 <Routes>
-                <Route path="*" element={<h3>404 - Not found</h3>}/>
                     <Route path="/" element={<Home titel="Welcome to SchoolHacks"/>}/>
                     <Route path="workshops" element={<Workshops/>}> 
                       <Route path=":workshopName" element={<Workshop/>} ></Route>
                     </Route>
                     <Route path="about" element={<About/>}/>
-                    
+                    <Route path="*" element={<h1 className="not-found">Page Not Found</h1>}/>
                 </Routes>
 
                 <footer className="container">
