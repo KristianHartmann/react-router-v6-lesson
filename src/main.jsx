@@ -11,12 +11,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <div className="main">
+      <Header />
         <Routes>
           <Route path="/" element={<Home titel="Welcome to SchoolHacks" />} />
           <Route path="/workshops" element={<Workshops />} />
         </Routes>
         <footer className="container">
-          &copy;2022 |{" "}
           <a
             href="https://www.schoolhacks.eu"
             target="_blank"
