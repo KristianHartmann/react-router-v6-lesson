@@ -21,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                       <Route path=":workshopName" element={<Workshop/>} ></Route>
                     </Route>
                     <Route path="about" element={<About/>}/>
+                    
                 </Routes>
 
                 <footer className="container">
