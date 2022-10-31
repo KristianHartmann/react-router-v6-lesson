@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import {getWorkshops} from "../api";
 
 export default function Workshops() {
@@ -12,6 +13,9 @@ export default function Workshops() {
                     </li>
                 ))}
             </ul>
+            <Outlet></Outlet>
+
         </div>
     );
+
 }
